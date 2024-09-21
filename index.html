@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/IMG/logo.jpg">
+    <title>Pantalla Principal</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="assets/IMG/logo.jpg" alt="logo">
+            </a>
+            <ul class="links">
+                <span class="close-btn"><i class="ri-close-large-line"></i></span>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+            <span class="menu-btn"><i class="ri-menu-line"></i></i></span>
+        </nav>
+    </header>
+    <!-- NAVBAR-END -->
+
+    <!-- LOGIN -->
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn"><i class="ri-close-large-line"></i></span>
+        <div class="form-box">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connect with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="login-pass" required>
+                        <label>Password</label>
+                        <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+                    </div>
+                    <a href="#" class="forgot-pass">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom link">
+                    Don't have an account?
+                    <a href="#">Signup</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LOGIN-END -->
+
+    <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>
