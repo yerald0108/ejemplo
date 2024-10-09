@@ -3,6 +3,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const hidenMenuBtn = navbarMenu.querySelector(".close-btn");
 const showPopupBtn = document.querySelector(".login-btn");
 const hidePopupBtn = document.querySelector(".form-popup .close-btn");
+const overlay = document.getElementById('overlay');
 
 
 menuBtn.addEventListener("click", () => {
@@ -18,6 +19,8 @@ showPopupBtn.addEventListener("click", () => {
 
 //CLOSE-LOGIN
 hidePopupBtn.addEventListener("click" , () =>  showPopupBtn.click());
+
+overlay.addEventListener('click', () => document.body.classList.toggle('show-popup'));
 
 const showHiddenPass = (loginPass, loginEye) => {
     const input = document.getElementById(loginPass),
